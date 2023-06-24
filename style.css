@@ -1,17 +1,26 @@
 body{
 	height:100%;
 	margin:0;
+	background-image: url('icons/pexels-dom-j-310452.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
 }
 
 form{
 	margin:auto;
-	margin-top:10vh;
+	margin-top:4.5vh;
 	width: 30vw;
-	height:20vh;
+	min-height:fit-content;
+	display: block;
 }
 
 label>img{
-	width:50px;
+	width:55px;
+}
+
+button>img{
+	margin-bottom:2vh;
 }
 
 .form-check{
@@ -22,3 +31,99 @@ label>img{
 #submit{
 	display:block;
 }
+
+#main{
+	width:50vw;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+#btn-container>button{
+	background-color: transparent;
+	border:none;
+}
+
+#result-box{
+	width:30vw;
+}
+
+#btn-container{
+	width:fit-content;
+}
+
+
+.rainbow-button {
+  width: 5vw;
+  height:12.5vh;
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  border-radius:5px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-transform:uppercase;
+  font-size:3vw;
+  font-weight:bold;
+}
+.rainbow-button:after {
+  content:attr(alt);
+  width:20vw;
+  height:8vw;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.rainbow-button:hover {
+  animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+.footer-basic {
+  padding: 10px 0;
+  margin-top: 10vh;
+  color:#4b4c4d;
+}
+
+
+.footer-basic .social {
+  text-align:center;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:20px;
+  margin-left:5vw;
+  text-align:center;
+  font-size:13px;
+  margin-bottom:0;
+}
+
+.social > a > img{
+	width:5vw;
+}
+
+.social > a{
+	margin-left:2vw;
+}
+/* Credit to https://epicbootstrap.com/snippets/footer-basic */
